@@ -1,0 +1,188 @@
+{% extends "core/base.html" %}
+{% block title %}Livros{% endblock %}
+{% load static %}
+    
+    {% block content %}
+    
+    <!-- Carousel -->
+    <link rel="stylesheet" href="{% static 'core/css/livros.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <div id="carouselLivros" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <a href="#historia">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/Historia.jpg' %}" alt="First slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#codigo">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/Codigo.jpg' %}" alt="Second slide">
+            </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#poo21">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/Poo21.jpg' %}" alt="Third slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#progWeb">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/ProgWeb.jpg' %}" alt="Fourth slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#htmlCss">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/HtmlCss.jpg' %}" alt="Fifth slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#javascripte">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/Javascript.jpg' %}" alt="Sixth slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#bancos">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/BancosDados.jpg' %}" alt="Seventh slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#redes">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/Redes.jpg' %}" alt="Eigth slide">
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <a href="#arquitetura">
+                    <img class="d-block w-100" src="{% static 'core/img/livros/ArquiteturaOrganizatio.jpg' %}" alt="Ninth slide">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div>
+        <section class="cards">
+            
+            <!-- Card Historia da Computação -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="historia">
+                        <img src="{% static 'core/img/livros/Historia_BIG.jpg' %}" alt="Historia da Computação">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Historia da Computação</h2>
+                    <p>O livro apresenta uma linha de tempo descrevendo todos os inventos e ideias que tiveram influência na história da computação, iniciando na pré-história, com a contagem com dedos e varas de contagem, passado pela era clássica e as diversas invenções gregas, e chegando finalmente aos dias de hoje.</p>
+                </div>
+            </article>
+
+            <!-- Card Código Limpo -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="codigo">
+                        <img src="{% static 'core/img/livros/Codigo_BIGjpg.jpg' %}" alt="Código Limpo">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Código Limpo</h2>
+                    <p>Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim.</p>
+                </div>
+            </article>
+
+            <!-- Card Programação Orientada a Objetos -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="poo21">
+                        <img src="{% static 'core/img/livros/Poo21_BIG.jpg' %}" alt="Programação Orientada a Objetos">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Programação Orientada a Objetos</h2>
+                    <p>Este livro apresenta ferramentas para que o leitor domine os conceitos básicos da programação orientada a objetos (POO) em apenas 21 dias. 'Aprenda Programação Orientada' ensina a - pensar OO no início de seu projeto; adquirir estratégias para projetar e gerenciar projetos de programação; dominar o vocabulário e os conceitos da POO; e aplicar os conhecimentos de POO em exemplos reais.</p>
+                </div>
+            </article>
+
+            <!-- Card HTML CSS JS NODE-->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="progWeb">
+                        <img src="{% static 'core/img/livros/ProgWeb_BIG.jpg' %}" alt="HTML CSS JS NODE">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Programação Web com Node.js</h2>
+                    <p>Este livro vai lhe ensinar a programar para a web, com um
+                        foco em Javascript usando Node.js, mas não vai lhe ensinar lógica básica e algoritmos, ele exige que você já saiba isso, ao menos em um nível básico.</p>
+                </div>
+            </article>
+
+            <!-- Card VS CODE -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="htmlCss">
+                        <img src="{% static 'core/img/livros/HtmlCss_BIG.jpg' %}" alt="HTML e CSS">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>HTML e CSSE</h2>
+                    <p>A cada dia, mais e mais pessoas querem aprender um pouco de HTML e CSS. Juntando-se aos web designers e programadores profissionais estão novos públicos que precisam conhecer um pouco de código no trabalho e aqueles que querem tornar seus blogs pessoais mais atraentes.</p>
+                </div>
+            </article>
+
+            <!-- Card Javascript -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="javascripte">
+                        <img src="{% static 'core/img/livros/Javascript_BIG.jpg' %}" alt="Javascript">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Javascript</h2>
+                    <p>Este é um livro para iniciantes na área de programação que explica a linguagem de programação Javascript desde os comandos mais básicos até os conceitos mais complexos, da versão ES5, com o auxilio de diversos exemplos práticos.</p>
+                </div>
+            </article>
+
+            <!-- Card Bancos de Dados -->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="bancos">
+                        <img src="{% static 'core/img/livros/BancosDados_BIG.jpg' %}" alt="Bancos de Dados">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Bancos de Dados</h2>
+                    <p>Introdução a Sistemas de Bancos de Dados, Oitava Edição, oferece uma introdução completa ao vasto campo de sistemas de bancos de dados.O livro apresenta uma base sólida sobre os alicerces da tecnologia de bancos de dados, ao mesmo tempo em que esclarece como o campo deve se desenvolver no futuro..</p>
+                </div>
+            </article>
+
+            <!-- Card Redes de Computadores-->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="redes">
+                        <img src="{% static 'core/img/livros/Redes_BIG.jpg' %}" alt="Redes de Computadores">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Redes de Computadores</h2>
+                    <p>O mais importante é o enorme crescimento das redes sem fio, incluindo 802.11, loops locais sem fio, redes celulares 2G e 3G, Bluetooth, WAP, i-mode e outras. Acompanhando essa tendência, incluímos neste volume uma grande quantidade de material sobre redes sem fio. Outro tópico que se tornou importante recentemente é a segurança; assim, foi acrescentado um capítulo inteiro sobre esse assunto.</p>
+                </div>
+            </article>
+
+            <!-- Card Arquitetura Organização-->
+            <article class="tarjeta">
+                <a href="#">
+                    <figure class="thumbnail" id="arquitetura">
+                        <img src="{% static 'core/img/livros/ArquiteturaOrganizatio_BIG.jpg' %}" alt="Arquitetura e Organização">
+                    </figure>
+                </a>
+                <div class="tarjeta-content">
+                    <h2>Arquitetura de Computadores</h2>
+                    <p>Nesta edição, William Stallings apresenta os fundamentos do processador e do design de computadores abordando questões relacionadas à memória, à E/S e a sistemas paralelos e trazendo exemplos que auxiliam nas escolhas necessárias durante a implementação de um sistema operacional. .</p>
+                </div>
+            </article>
+
+        </section>
+    </div>
+    <div>
+        <img class="bandeira"  src="{% static 'core/img/livros/brasil-bandeira.gif' %}" alt="Bandeira">
+    </div>
+    {% endblock %}

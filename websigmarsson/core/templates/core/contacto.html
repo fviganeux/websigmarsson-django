@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% block title %}Contacto{% endblock %}
+
+    {% block content %}
+    <form action="POST">
+        <fieldset>
+            <legend class="green">Quién sos...</legend>
+            <label class="green" for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Nombre..."><br><br>
+            <label class="green" for="lname">Apellido</label>
+            <input type="text" id="lname" name="lname" placeholder="Apellido..."><br><br>
+            <label class="green" for="city">Ciudad:</label>
+            <input type="city" id="city" name="city" placeholder="Dónde vivís..."><br><br>
+            <label class="green" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Dónde te respondemos..."><br><br>
+        </fieldset>
+        <fieldset>
+            <legend class="green"> Consulta:</legend>
+            <textarea name="comentario" rows="10" cols="40" placeholder="Por favor, contanos tu inquietud..."></textarea>
+            <input type="submit" value="Enviar Consulta">
+        </fieldset>
+    </form>
+       {% endblock %}

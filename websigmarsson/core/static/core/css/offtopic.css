@@ -1,0 +1,33 @@
+h1 {
+    margin: 0;
+    padding: .7em;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+}
+
+a:active {
+    background-color: green;
+     color: white;
+}
+
+a:visited {
+    color: rgb(202, 251, 66);
+    text-decoration-style: wavy;
+}
+
+a {
+    outline-color: transparent;
+    color: rgb(202, 251, 66);
+    text-decoration: none;
+}
+
+#wikilink {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.yutur {
+    text-align: center;
+}

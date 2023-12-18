@@ -1,0 +1,63 @@
+ul.nube {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+  }
+
+ul.nube a {
+    color: rgb(225, 116, 14);
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+    --size: 9;
+    font-size: calc(var(--size) * 0.35rem + 0.75rem);
+    opacity: calc((15 - (9 - var(--size))) / 15);
+    margin: .5vw;
+}
+
+ul.nube li:nth-child(n+1) a { color: rgb(9, 117, 9); --color: rgb(218, 24, 24);}
+ul.nube li:nth-child(2n+1) a { color: rgb(19, 19, 191); --color: rgb(224, 159, 69); }
+ul.nube li:nth-child(3n+1) a { color: rgb(213, 18, 51); --color: rgb(21, 213, 18); }
+
+ul.nube a[data-weight="1"] { --size: 1; }
+ul.nube a[data-weight="2"] { --size: 2; }
+ul.nube a[data-weight="3"] { --size: 3; }
+ul.nube a[data-weight="4"] { --size: 4; }
+ul.nube a[data-weight="5"] { --size: 5; }
+ul.nube a[data-weight="6"] { --size: 6; }
+ul.nube a[data-weight="7"] { --size: 7; }
+ul.nube a[data-weight="8"] { --size: 8; }
+ul.nube a[data-weight="9"] { --size: 9; }
+
+ul.nube a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: var(--color);
+    transform: translate(-50%, 0);
+    opacity: 0.25;
+    transition: width 0.5s;
+    border-radius: 5px;
+  }
+  
+  ul.nube a:focus::before,
+  ul.nube a:hover::before {
+    width: 100%;
+  }
+
+
+
+@media (prefers-reduced-motion) {
+    ul.nube * {
+      transition: none !important;
+    }
+  }

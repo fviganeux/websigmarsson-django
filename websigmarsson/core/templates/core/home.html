@@ -1,0 +1,24 @@
+{% extends "core/base.html" %}
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+    <section id="principal">
+        <article id="presentacion">
+            <div><h1>Sigmarsson IT</h1></div>
+            <div><p id="articulo">Un sitio con contenidos de informática en general. Tutoriales, información, consejos, servicios brindados por los autores y otras temáticas. Tenemos una sección de literatura en portugués.</p></div>
+        </article>
+        
+        <article id="izquierda">
+            <p id="costado_izquierdo">Alguna vez comenzó todo, con dos personas programando en una DEC PDP-11, no con un monitor sino con un teletipo. Se trata de Denis Ritchie y Brian Kernighan, que no solo crearon el lenguaje de programación C, sino que tradujeron del Ensamblador el sistema operativo UNIX, dando origen al mundo informático tal cual lo conocemos hoy en día...</p>
+        </article>
+        
+        <div id="centro">
+            <img src="{% static 'core/img/kernighanRitchie.webp' %}" alt="KERNIGHAN & RITCHIE">
+        </div>
+        
+        <article id="derecha">
+            <p id="costado_derecho">Desde el comienzo del uso del fuego hasta que se creó la electricidad pasaron cientos de años... <br>Desde la creación de la primer computadora hasta los días que vivimos, únicos en la historia de la humanidad, en que llevamos ocho procesadores en el bolsillo del pantalón, tan solo unos años, ni siquiera ha transcurrido un siglo desde que encendieron la ENIAC...</p>
+        </article>
+    </section>
+    {% endblock %}

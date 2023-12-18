@@ -1,0 +1,53 @@
+.cabecera {
+    background-color: #19bcb9;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a p {
+    margin: 0;
+    padding: .7em;
+    font-weight: 300;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.menu-simple ul {
+    background: rgb(224, 154, 14);
+    border-radius: 5px;
+    list-style-type: none;
+    padding: .3em;
+    margin: .1em;
+    margin-bottom: 1em;
+}
+
+.menu-simple ul a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    padding: .6em;
+}
+
+.menu-simple ul a:hover {
+    background-color: rgb(236, 202, 143);
+    border-radius: 5px;
+    color: rgb(53, 212, 14);
+}
+
+/* Iniciamos Flexbox */
+.menu-simple ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-simple li {
+    flex: 1 0 auto;
+    text-align: center;
+}
